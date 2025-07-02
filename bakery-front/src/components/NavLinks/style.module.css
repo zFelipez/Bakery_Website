@@ -1,0 +1,30 @@
+
+
+.nav_btn{
+    list-style: none;
+}
+
+.nav_btn a{
+    font-size: 1.2rem; 
+    color:  rgb(10, 5, 0); 
+    text-decoration: none; 
+    padding: 0.4rem 0.5rem ;
+    transition: all 0.1s ease;
+    border-radius: 8px 
+
+
+}
+
+
+.no_icons:hover{
+  background-color:   rgba(26, 23, 10, 0.871);
+  color:bisque;
+  padding: 0.4rem 0.5rem ;
+  
+}
+
+.icon_styles:hover{
+   color: rgb(110, 110, 110);
+   background-color: transparent;
+
+}
