@@ -1,0 +1,60 @@
+
+
+.sideNav{
+    
+    height:100vh;
+    background: bisque ;
+    display: flex;
+    flex-direction:column;
+    gap:2rem ;
+    overflow-y:auto;
+    width:0;
+    transition:width 0.3s ease;
+
+  
+
+}
+
+.sideNavTrue{
+    width:22rem;
+}
+.sideNavIcon{
+
+    margin:1rem;
+    
+    display:flex;
+    align-self: flex-end
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 0;
+}
+ 
+
+h1{
+    margin-top:0rem;
+    text-align:center;
+     
+ 
+}
+
+.ul{
+display: flex;
+flex-direction:column;
+justify-content:center;
+align-items: center;
+width:100%;
+ 
+ 
+
+}
+ 
+
+.force_scroll{
+    padding-top:200px;
+    width:100%;
+    background-color: transparent;
+}
+
+

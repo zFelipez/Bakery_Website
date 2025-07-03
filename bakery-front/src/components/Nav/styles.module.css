@@ -32,5 +32,8 @@
   gap:1rem;
   flex-direction: row;
   flex:0;
-  padding-right:2rem
+  padding-right:2rem;
+  padding-left:3rem;
+   
 }
+

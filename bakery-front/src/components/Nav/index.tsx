@@ -1,16 +1,32 @@
 import { ShoppingCart, User } from 'lucide-react';
 import { NavLinks } from '../NavLinks';
 import styles from './styles.module.css' ; 
-
+import { Device } from '../../utils/Device';
+import { SideNavIcon } from '../NavLinks/SideNavIcon';
 
 
 
 export function Nav(){
+
+     const device = new Device();
+     const width= device.deviceWidthIndentifier(); 
+     console.log(width)
+
     return(
 
         <>
         
         <nav className={styles.nav}>
+
+         <ul className={ styles.nav_sec_icon} > 
+              
+              
+           <SideNavIcon/>
+             
+              
+           </ul>
+
+
           <ul className={styles.nav_sec_btn}>
            
             
