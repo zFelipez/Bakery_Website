@@ -22,17 +22,17 @@ export function SideNav({active}: SideNavProps){
          <h1> The Bread's Fraternity </h1>
           <ul className={styles.ul}>
 
-         <SideNavMenu> Inicio</SideNavMenu>
-         <SideNavMenu> Sobre</SideNavMenu>
-         <SideNavMenu> Produtos</SideNavMenu>
-         <SideNavMenu> Contato</SideNavMenu>
-         <SideNavMenu> Conta</SideNavMenu>
-         <SideNavMenu> Compras</SideNavMenu>
-         <SideNavMenu> Assistente </SideNavMenu>
-         <SideNavMenu> Assistente </SideNavMenu>
-         <SideNavMenu> Assistente </SideNavMenu>
-         <SideNavMenu> Assistente </SideNavMenu>
-         <SideNavMenu> Assistente </SideNavMenu>
+         <SideNavMenu linkAddress='#'> Inicio</SideNavMenu>
+         <SideNavMenu linkAddress='#'> Sobre</SideNavMenu>
+         <SideNavMenu linkAddress='#' > Produtos</SideNavMenu>
+         <SideNavMenu linkAddress='#'> Contato</SideNavMenu>
+         <SideNavMenu linkAddress='#'> Conta</SideNavMenu>
+         <SideNavMenu linkAddress='#'> Compras</SideNavMenu>
+         <SideNavMenu linkAddress='#'> Assistente </SideNavMenu>
+         <SideNavMenu linkAddress='#'> Assistente </SideNavMenu>
+         <SideNavMenu linkAddress='#'> Assistente </SideNavMenu>
+         <SideNavMenu linkAddress='#'> Assistente </SideNavMenu>
+         <SideNavMenu linkAddress='#'> Assistente </SideNavMenu>
          
 
           
