@@ -1,10 +1,11 @@
-import { Menu } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { NavLinks } from '../../NavLinks';
 import styles from './styles.module.css';
 import { useSideNavContext } from '../../../contexts/SideNavContext';
 
 
-export function SideNavIcon(){
+
+export function SideNavIcon( ){
    const {open, setOpen} = useSideNavContext(); 
      
    
@@ -16,8 +17,10 @@ export function SideNavIcon(){
     return(
 
 
-   <>
-   <button onClick={openAndCloseSideNav} type='button' className={styles.button}>  <NavLinks icon={true} sideNavIcon={true} linkAddress='#'  >  <Menu/>   </NavLinks> </button>
+   < >
+   <button  onClick={openAndCloseSideNav} type='button' className={styles.button}>  <NavLinks icon={true} sideNavIcon={true} linkAddress='#'  >
+      
+      {open ? <X/>: <Menu/>  }    </NavLinks> </button>
    
    </>
 

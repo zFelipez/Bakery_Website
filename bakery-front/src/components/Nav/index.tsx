@@ -3,10 +3,11 @@ import { NavLinks } from '../NavLinks';
 import styles from './styles.module.css' ; 
 import { Device } from '../../utils/Device';
 import { SideNavIcon } from '../NavLinks/SideNavIcon';
+import type { HTMLAttributes } from 'react';
 
 
 
-export function Nav(){
+export function Nav( props :  HTMLAttributes<HTMLElement>){
 
      const device = new Device();
      const width= device.deviceWidthIndentifier(); 
@@ -16,7 +17,7 @@ export function Nav(){
 
         <>
         
-        <nav className={styles.nav}>
+        <nav className={styles.nav} {...props}>
 
          <ul className={ styles.nav_sec_icon} > 
               
