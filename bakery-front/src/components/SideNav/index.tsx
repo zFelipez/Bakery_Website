@@ -4,19 +4,19 @@ import styles from './styles.module.css';
 
 
 type SideNavProps = {
-    active : true | false, 
+    open : true | false, 
 }
 
-export function SideNav({active}: SideNavProps){
+export function SideNav({open}: SideNavProps){
 
-    console.log(active)
+    console.log(open)
 
     return (
 
     
     
 
-    <nav className={` ${styles.sideNav}  ${active ? styles.sideNavTrue : ''}`}  >
+    <nav className={` ${styles.sideNav}  ${open? styles.sideNavTrue : ''}`}  >
         <div className={styles.sideNavIcon}> <SideNavIcon />  </div>
         
          <h1> The Bread's Fraternity </h1>

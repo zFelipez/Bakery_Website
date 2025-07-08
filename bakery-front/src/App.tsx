@@ -1,26 +1,24 @@
 import { useState } from "react";
  
 import { SideNav } from "./components/SideNav";
+import { Nav } from "./components/Nav";
+import { useSideNavContext } from "./contexts/SideNavContext";
 
 
 
 
 export function App (){
 
-  const [active,setActive] =useState(false)
 
 
-   function activew(){
-     active? setActive(false) : setActive(true)
-    
-   }
-
+   const {open} = useSideNavContext(); 
 
   return(
       
       <>
-      <button onClick={activew} >clique </button>
-       <SideNav active={active}></SideNav>
+      <Nav></Nav>
+      
+       <SideNav open={open}></SideNav>
        
       </>
 
