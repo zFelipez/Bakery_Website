@@ -1,5 +1,3 @@
-import { useState } from "react";
- 
 import { SideNav } from "./components/SideNav";
 import { Nav } from "./components/Nav";
 import { useSideNavContext } from "./contexts/SideNavContext";
