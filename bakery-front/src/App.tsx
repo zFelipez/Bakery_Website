@@ -1,6 +1,7 @@
 import { SideNav } from "./components/SideNav";
 import { Nav } from "./components/Nav";
 import { useSideNavContext } from "./contexts/SideNavContext";
+import { AiIcon } from "./components/AiIcon";
  
 
 
@@ -26,7 +27,11 @@ export function App (){
       
        <SideNav open={open}></SideNav>
        
+
+      <AiIcon></AiIcon>
       </>
+
+
 
   )
 }

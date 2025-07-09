@@ -1,0 +1,29 @@
+.bot{
+    position:fixed;
+    bottom: 2rem;
+    right: 2rem;
+  
+    background-color:bisque; 
+    width:3rem;
+    height:3rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:50%;
+    cursor:pointer; 
+    
+}
+
+.bot svg{
+    width:2rem;
+    height:2rem ;
+    color:  rgb(10, 5, 0); 
+}
+
+.bot:hover {
+    background-color: rgb(252, 206, 151);
+    
+    
+}
+
+ 
