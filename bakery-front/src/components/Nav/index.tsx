@@ -4,6 +4,7 @@ import styles from './styles.module.css' ;
 import { Device } from '../../utils/Device';
 import { SideNavIcon } from '../NavLinks/SideNavIcon';
 import { useEffect, useState, type HTMLAttributes } from 'react';
+import { BakeryIcon } from '../BakeryIcon';
 
 
 
@@ -47,7 +48,15 @@ export function Nav( props :  HTMLAttributes<HTMLElement>){
            
       </ul>  
 
-          ) : null }
+          ) : (
+
+            <ul>
+
+             <BakeryIcon/>
+
+            </ul>
+          ) }
+
           
           <ul className={isMobile ?  styles.nav_sec_icon_mobile : styles.nav_sec_icon}> 
               

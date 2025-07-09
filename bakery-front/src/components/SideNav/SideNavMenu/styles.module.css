@@ -3,7 +3,7 @@
   list-style: none;
  
   width:100%;
-  border-top: 0.001px black solid ;
+  border-top: 0.001px rgba(237, 201, 156, 0.547) solid ;
   display:flex;
   justify-content: center;
   align-items:center;

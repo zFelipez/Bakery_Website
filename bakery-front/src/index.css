@@ -10,3 +10,7 @@ body{
   width: 100vw;
   height:100vh; 
 }
+
+a, img, button {
+  -webkit-tap-highlight-color: transparent;
+}
