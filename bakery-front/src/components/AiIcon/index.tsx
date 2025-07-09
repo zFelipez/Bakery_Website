@@ -10,10 +10,9 @@ export function AiIcon(){
     return (
 
         <>
-        <div className={styles.bot}>
+        
 
-              <Bot/>
-        </div>
+              <button className={styles.bot}><Bot/></button>
          
         </>
     )
