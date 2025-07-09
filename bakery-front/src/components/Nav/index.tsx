@@ -1,17 +1,23 @@
-import { ShoppingCart, User } from 'lucide-react';
+import { ScrollText,User } from 'lucide-react';
 import { NavLinks } from '../NavLinks';
 import styles from './styles.module.css' ; 
 import { Device } from '../../utils/Device';
 import { SideNavIcon } from '../NavLinks/SideNavIcon';
-import type { HTMLAttributes } from 'react';
+import { useEffect, useState, type HTMLAttributes } from 'react';
 
 
 
 export function Nav( props :  HTMLAttributes<HTMLElement>){
+      
+      const [isMobile,setisMobile] = useState(false); 
+      
+     const device = new Device(); 
 
-     const device = new Device();
-     const width= device.deviceWidthIndentifier(); 
-     console.log(width)
+     useEffect(()=>{
+      setisMobile(device.deviceTypeIndentifier());
+
+     },[])
+     
 
     return(
 
@@ -27,10 +33,12 @@ export function Nav( props :  HTMLAttributes<HTMLElement>){
               
            </ul>
 
+          {!isMobile ? (
 
-          <ul className={styles.nav_sec_btn}>
+
+           <ul className={styles.nav_sec_btn}>
            
-            
+        
            <NavLinks icon={false} linkAddress='#'> Inicio </NavLinks>
            <NavLinks icon={false} linkAddress='#'> Sobre </NavLinks>
            <NavLinks icon={false}  linkAddress='#'> Produtos </NavLinks>
@@ -38,10 +46,13 @@ export function Nav( props :  HTMLAttributes<HTMLElement>){
            
            
       </ul>  
-          <ul className={styles.nav_sec_icon}> 
+
+          ) : null }
+          
+          <ul className={isMobile ?  styles.nav_sec_icon_mobile : styles.nav_sec_icon}> 
               
-               <NavLinks icon={true} linkAddress='#' > <User/>  </NavLinks>
-               <NavLinks icon= {true} linkAddress='#'> <ShoppingCart/> </NavLinks>
+               <NavLinks  icon={true} linkAddress='#' > <User/>  </NavLinks>
+               <NavLinks icon= {true} linkAddress='#'> <ScrollText/> </NavLinks>
               
            </ul>
 

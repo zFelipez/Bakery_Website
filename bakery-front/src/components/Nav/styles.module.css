@@ -6,6 +6,7 @@
   background-color: bisque;
   display:flex; 
   flex-direction:row;
+  align-items: center;
   
  
 
@@ -37,3 +38,16 @@
    
 }
 
+
+.nav_sec_icon_mobile{
+  position:fixed;
+  right: 0.5rem;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap:1rem;
+  flex-direction: row;
+  padding-right:2rem;
+  padding-left:3rem;
+  
+}
