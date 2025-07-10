@@ -1,10 +1,10 @@
-import { ScrollText,User } from 'lucide-react';
+import { ScrollText,ShoppingCart,User } from 'lucide-react';
 import { NavLinks } from '../NavLinks';
 import styles from './styles.module.css' ; 
 import { Device } from '../../utils/Device';
 import { SideNavIcon } from '../NavLinks/SideNavIcon';
 import { useEffect, useState, type HTMLAttributes } from 'react';
-import { BakeryIcon } from '../BakeryIcon';
+import { MobileNavBakeryIcon } from '../MobileNavBakeryIcon';
 
 
 
@@ -52,7 +52,7 @@ export function Nav( props :  HTMLAttributes<HTMLElement>){
 
             <ul>
 
-             <BakeryIcon/>
+             <MobileNavBakeryIcon/>
 
             </ul>
           ) }
@@ -61,6 +61,7 @@ export function Nav( props :  HTMLAttributes<HTMLElement>){
           <ul className={isMobile ?  styles.nav_sec_icon_mobile : styles.nav_sec_icon}> 
               
                <NavLinks  icon={true} linkAddress='#' > <User/>  </NavLinks>
+               <NavLinks icon= {true} linkAddress='#'> <ShoppingCart/> </NavLinks>
                <NavLinks icon= {true} linkAddress='#'> <ScrollText/> </NavLinks>
               
            </ul>

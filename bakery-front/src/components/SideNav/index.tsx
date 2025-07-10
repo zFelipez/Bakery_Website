@@ -1,4 +1,4 @@
-import { BakeryIcon } from '../BakeryIcon';
+import { BakeryIcon } from '../SideNavBakeryIcon';
 import { SideNavIcon } from '../NavLinks/SideNavIcon';
 import { SideNavMenu } from './SideNavMenu';
 import styles from './styles.module.css';
