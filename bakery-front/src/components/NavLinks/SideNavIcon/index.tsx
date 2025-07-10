@@ -1,12 +1,12 @@
 import { Menu, X } from 'lucide-react';
 import { NavLinks } from '../../NavLinks';
 import styles from './styles.module.css';
-import { useSideNavContext } from '../../../contexts/SideNavContext';
+import { useBakeryContext } from '../../../contexts/BakeryContext';
 
 
 
 export function SideNavIcon( ){
-   const {open, setOpen} = useSideNavContext(); 
+   const {navigation : {open, setOpen}} = useBakeryContext(); 
      
    
    

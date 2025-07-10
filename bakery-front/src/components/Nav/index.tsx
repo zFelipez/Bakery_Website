@@ -1,24 +1,17 @@
 import { ScrollText,ShoppingCart,User } from 'lucide-react';
 import { NavLinks } from '../NavLinks';
 import styles from './styles.module.css' ; 
-import { Device } from '../../utils/Device';
+ 
 import { SideNavIcon } from '../NavLinks/SideNavIcon';
-import { useEffect, useState, type HTMLAttributes } from 'react';
+import {   type HTMLAttributes } from 'react';
 import { MobileNavBakeryIcon } from '../MobileNavBakeryIcon';
+import { useBakeryContext } from '../../contexts/BakeryContext';
 
 
 
 export function Nav( props :  HTMLAttributes<HTMLElement>){
       
-      const [isMobile,setisMobile] = useState(false); 
-      
-     const device = new Device(); 
-
-     useEffect(()=>{
-      setisMobile(device.deviceTypeIndentifier());
-
-     },[])
-     
+      const {device: {isMobile }} = useBakeryContext(); 
 
     return(
 

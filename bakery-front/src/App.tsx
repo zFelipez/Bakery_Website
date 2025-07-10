@@ -1,7 +1,9 @@
 import { SideNav } from "./components/SideNav";
 import { Nav } from "./components/Nav";
-import { useSideNavContext } from "./contexts/SideNavContext";
+import { useBakeryContext} from "./contexts/BakeryContext";
 import { AiIcon } from "./components/AiIcon";
+import { useEffect } from "react";
+import { Device } from "./utils/Device";
  
 
  
@@ -13,10 +15,16 @@ export function App (){
 
 
 
-   const {open} = useSideNavContext(); 
+   const {navigation : {open },device: {setIsMobile}} = useBakeryContext(); 
+  
+  
    
-
-   
+   const device = new Device(); 
+     
+     useEffect(()=>{
+           setIsMobile(device.deviceTypeIndentifier());
+     
+          },[])
     
  
   return(
@@ -24,9 +32,9 @@ export function App (){
       <>
 
       
-      <Nav style={{ zIndex: open ? -1: 1}}></Nav>
+      <Nav style={{ zIndex:  open ? -1: 1}}></Nav>
       
-       <SideNav open={open}></SideNav>
+       <SideNav open={ open}></SideNav>
        
 
       <AiIcon></AiIcon>

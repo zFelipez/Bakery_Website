@@ -1,18 +1,10 @@
-import { useEffect, useState } from 'react';
 import styles from './styles.module.css';
-import { Device } from '../../utils/Device';
+import { useBakeryContext } from '../../contexts/BakeryContext';
 
 
  
 export function BakeryIcon( ){
-     const [isMobile,setisMobile] = useState(false); 
-           
-     const device = new Device(); 
-     
-     useEffect(()=>{
-           setisMobile(device.deviceTypeIndentifier());
-     
-          },[])
+     const {device: {isMobile }} = useBakeryContext(); 
 
      return(
 
