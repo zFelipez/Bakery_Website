@@ -2,22 +2,51 @@ import { BakeryIcon } from '../SideNavBakeryIcon';
 import { SideNavIcon } from '../NavLinks/SideNavIcon';
 import { SideNavMenu } from './SideNavMenu';
 import styles from './styles.module.css';
+import { useEffect,useRef } from 'react';
 
 
 type SideNavProps = {
-    open : true | false, 
+    open : boolean, 
+    setOpen: React.Dispatch<React.SetStateAction<boolean>>
 }
 
-export function SideNav({open}: SideNavProps){
+export function SideNav({open,setOpen}: SideNavProps){
 
-    console.log(open)
+    const navRef= useRef(null)
+
+    useEffect(()=>{
+ 
+      
+        
+     
+       function handleOutsideClick(event: MouseEvent ){
+        
+        const target= event.target as Node;
+        
+        if(navRef.current?.contains(target) )return ;
+
+        if(open){
+            setOpen(false);
+        }
+       
+
+       }
+
+      
+       document.addEventListener('mousedown', handleOutsideClick);
+
+       return ()=>{
+        document.removeEventListener('mousedown', handleOutsideClick)
+       }
+
+    }, [open, setOpen])
 
     return (
 
     
     
 
-    <nav className={` ${styles.sideNav}  ${open? styles.sideNavTrue : ''}`}  >
+    <nav  ref= {navRef} className={` ${styles.sideNav}  ${open? styles.sideNavTrue : ''} sideNavFunc `}   >
         <div className={styles.sideNavIcon}> <SideNavIcon />  </div>
         
          <h1> <BakeryIcon></BakeryIcon></h1>

@@ -9,6 +9,7 @@ body{
   background : linear-gradient( 45deg, rgb(10, 5, 0),  rgb(26, 23, 10)) ; 
   width: 100vw;
   height:100vh; 
+  font-family: "EB Garamond", serif;
 }
 
 a, img, button {

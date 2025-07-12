@@ -18,7 +18,7 @@ export function SideNavIcon( ){
 
 
    < >
-   <button  onClick={openAndCloseSideNav} type='button' className={styles.button}>  <NavLinks icon={true} sideNavIcon={true} linkAddress='#'  >
+   <button   onClick={openAndCloseSideNav} type='button' className={`${styles.button} `}>  <NavLinks icon={true} sideNavIcon={true} linkAddress='#'  >
       
       {open ? <X/>: <Menu/>  }    </NavLinks> </button>
    

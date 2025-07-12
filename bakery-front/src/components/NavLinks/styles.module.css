@@ -4,11 +4,11 @@
     list-style: none;
 }
 
-.nav_btn a{
+.linkReact{
     font-size: 1.2rem; 
     color:  rgb(10, 5, 0); 
     text-decoration: none; 
-    padding: 0.4rem 0.5rem ;
+    padding: 0.4rem;
     transition: all 0.1s ease;
     border-radius: 8px ;
 
@@ -19,7 +19,7 @@
 .no_icons:hover{
   background-color:   rgba(26, 23, 10, 0.871);
   color:bisque;
-  padding: 0.4rem 0.5rem ;
+  padding: 0.4rem;
   
 }
 
@@ -31,7 +31,6 @@
 
 li:has(.sideNavIcon){
   width:2.5rem;
-  
   display: flex;
   justify-content: center;
   align-items: center;
