@@ -12,7 +12,7 @@ type SideNavProps = {
 
 export function SideNav({open,setOpen}: SideNavProps){
 
-    const navRef= useRef(null)
+    const navRef= useRef<HTMLElement>(null)
 
     useEffect(()=>{
  
