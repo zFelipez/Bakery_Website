@@ -7,7 +7,7 @@ export function Home (){
     return (
 
     <>
-    <Default/>
+    <Default> On Development </Default>
     
     </>
 
