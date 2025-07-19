@@ -2,16 +2,17 @@ import { BakeryIcon } from '../SideNavBakeryIcon';
 import { SideNavIcon } from '../NavLinks/SideNavIcon';
 import { SideNavMenu } from './SideNavMenu';
 import styles from './styles.module.css';
-import { useEffect,useRef } from 'react';
+import { useEffect,useRef, type HTMLAttributes } from 'react';
 
 
 type SideNavProps = {
     open : boolean, 
     setOpen: React.Dispatch<React.SetStateAction<boolean>>
-}
+    
+} & HTMLAttributes<HTMLElement>
 
-export function SideNav({open,setOpen}: SideNavProps){
-
+export function SideNav({open,setOpen,...props}: SideNavProps){
+ 
     const navRef= useRef<HTMLElement>(null)
 
     useEffect(()=>{
@@ -46,7 +47,7 @@ export function SideNav({open,setOpen}: SideNavProps){
     
     
 
-    <nav  ref= {navRef} className={` ${styles.sideNav}  ${open? styles.sideNavTrue : ''} sideNavFunc `}   >
+    <nav {...props}  ref= {navRef} className={` ${styles.sideNav}  ${open? styles.sideNavTrue : ''} sideNavFunc `}   >
         <div className={styles.sideNavIcon}> <SideNavIcon />  </div>
         
          <h1> <BakeryIcon></BakeryIcon></h1>

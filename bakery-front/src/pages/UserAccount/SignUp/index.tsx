@@ -1,5 +1,7 @@
  
 import { SignUp } from "../../../components/Account/SignUp";
+ 
+import { Default } from "../../../templates/Default";
 
  
 
@@ -10,13 +12,20 @@ import { SignUp } from "../../../components/Account/SignUp";
 
 export function UserAccountSignUp(){
     
+   
+     
+     
+
     return (
 
         <>
 
-        <SignUp></SignUp>
+  
+              
+         
+        <Default><SignUp></SignUp></Default> 
  
-
+    
 
         </>
     )

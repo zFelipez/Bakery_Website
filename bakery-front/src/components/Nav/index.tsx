@@ -7,9 +7,11 @@ import {   type HTMLAttributes } from 'react';
 import { MobileNavBakeryIcon } from '../MobileNavBakeryIcon';
 import { useBakeryContext } from '../../contexts/BakeryContext';
 
+type NavProps= {
+  children: React.ReactNode, 
+}& HTMLAttributes<HTMLElement>
 
-
-export function Nav( props :  HTMLAttributes<HTMLElement>){
+export function Nav( {children, ...props }:NavProps ){
       
       const {device: {isMobile }} = useBakeryContext(); 
 
@@ -60,6 +62,8 @@ export function Nav( props :  HTMLAttributes<HTMLElement>){
            </ul>
 
         </nav>
+
+        {children}
 
         </>
     )

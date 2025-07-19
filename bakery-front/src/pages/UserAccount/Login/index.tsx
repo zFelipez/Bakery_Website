@@ -1,4 +1,5 @@
 import { LogIn } from "../../../components/Account/LogIn";
+import { Default } from "../../../templates/Default";
 
  
 
@@ -12,8 +13,9 @@ export function UserAccountLogin(){
     return (
 
         <>
-
-        <LogIn></LogIn>
+        
+        <Default><LogIn></LogIn></Default> 
+       
  
 
 

@@ -6,9 +6,11 @@ import { Nav } from "../components/Nav";
 import { AiIcon } from "../components/AiIcon";
 
  
+type DefaultProps = {
+  children: React.ReactNode, 
+}
 
-
-export function Default(){
+export function Default({children}: DefaultProps){
 
 
 
@@ -27,13 +29,20 @@ export function Default(){
   return(
       
       <>
-
-      
-       <Nav   style={{ zIndex:  open ? -1: 1}}></Nav>
-      
-       <SideNav open={ open} setOpen= {setOpen}></SideNav>
+        
+        
+         
+           
+      <Nav  style={{ zIndex:  open ? 1: 1}}> <div style={{ zIndex:  open ? -1: 1}}>{children}</div></Nav>
+        
        
-
+      <SideNav style={{ zIndex:  open ? 1: 1}} open={ open} setOpen= {setOpen}></SideNav>
+       
+       
+       
+        
+      
+       
       <AiIcon></AiIcon>  
 
       </>
