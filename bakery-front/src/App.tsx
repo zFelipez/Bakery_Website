@@ -1,6 +1,8 @@
 import { Route, Routes } from "react-router-dom";
 import { Home } from "./pages/Home";
-import { UserAccount } from "./pages/UserAccount";
+ 
+import { UserAccountLogin } from "./pages/UserAccount/Login";
+import { UserAccountSignUp } from "./pages/UserAccount/SignUp";
 
  
 
@@ -22,7 +24,8 @@ export function App (){
       
     <Routes>
       <Route path="/" element={<Home />} />
-       <Route path="/account" element={<UserAccount />} />
+       <Route path="/account/login" element={<UserAccountLogin />} />
+       <Route path="/account/signup" element={<UserAccountSignUp />} />
     </Routes>
 
       </>

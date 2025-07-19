@@ -53,7 +53,7 @@ export function Nav( props :  HTMLAttributes<HTMLElement>){
           
           <ul className={isMobile ?  styles.nav_sec_icon_mobile : styles.nav_sec_icon}> 
               
-               <NavLinks  title={'Sua Conta'} icon={true} linkAddress='account' > <User/>  </NavLinks>
+               <NavLinks  title={'Sua Conta'} icon={true} linkAddress='account/login' > <User/>  </NavLinks>
                <NavLinks  title={'Seu Carrinho'} icon= {true} linkAddress='shoppingCart'> <ShoppingCart/> </NavLinks>
                <NavLinks title={'Pedidos dos Clientes'} icon= {true} linkAddress='purchaseOrderList'> <ScrollText/> </NavLinks>
               
