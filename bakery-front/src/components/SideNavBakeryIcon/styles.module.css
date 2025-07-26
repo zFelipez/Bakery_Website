@@ -1,11 +1,8 @@
-img{
-    border-radius:50%;
-    
-}
-
+ 
 .img{
     width:12rem;
     height:12rem;
+     border-radius:50%;
     
 }
 
@@ -13,5 +10,6 @@ img{
     
     width:7rem;
     height:7rem;
+    border-radius:50%;
     
 }

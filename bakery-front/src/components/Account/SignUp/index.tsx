@@ -10,7 +10,7 @@ export function SignUp (){
      <>
      
        <DefaultAccount>   
-        <h1 className={styles.h1}>Sign Up</h1>
+        <h1 className={styles.h1}>Crie sua Conta</h1>
         <input className={styles.input} type="text" placeholder='Digite seu Email' /> 
         <input className= {styles.input}type="password" placeholder= 'Digite sua Senha'/>  
         <input className= {styles.input}type="password" placeholder= 'Confirme sua Senha'/>
