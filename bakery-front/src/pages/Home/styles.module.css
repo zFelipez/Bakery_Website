@@ -3,35 +3,243 @@
 
 
 .img{
-    background: url("./public/assets/top-home-img.png");
-    margin-top:4rem;
+    background: url("./assets/top-home-img.png");
+    margin-top:3rem;
     width:100%;
     height:35rem; 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position:fixed;
+    position:absolute;
      
 }
 
 
 .text_container{
     position: relative; 
-    top:10rem;
-    text-align:left  
+    height:39rem; 
+    text-align:left;
+    display: flex;
+    gap: 2rem ;
+    flex-direction: column; 
     
 
 }
 
 .text_container *{
  
-    margin-left: 2rem;
+    margin-left: 5rem;
+      font-weight: 400 ; 
+}
+.topTitles{
+     color :rgba(10, 5, 0, 0.927); 
+     width: fit-content;
+     display:flex;
+     justify-content: center;
+     align-items: center ;
+     border-radius: 0.5rem ;
+     padding: 0 0.5rem;
+       text-shadow: 
+    -0.3px -0.3px 0 bisque,  
+     0.3px -0.3px 0 bisque,
+    -0.3px  0.3px 0 bisque,
+     0.3px 0.3px 0 bisque;
+
 }
 
-h1{
-     text-align:left !important; 
+.h1{
+     text-align:left !important;
+     font-size: 4rem; 
+    font-weight:bold
+
+}
+
+.h2{
+
+   font-family: 'Raleway', sans-serif;
+    font-size: 2rem; 
+    
+}
+@media( min-width:915px){
+
+.text_container{
+     top:13rem;
+      
+}
+
+
+
+.h1{
+     text-align:left !important;
+     
+      
+
+}
+
+ 
+}
+
+@media(min-width: 476px ) and (max-width: 914px){
+
+   .img{
+      margin-top:4.5rem;
+}
+
+    .text_container{
+     top:8rem;
+}
+}
+
+
+
+@media( min-width: 300px) and (max-width: 475px){
+
+
+.img{
+      margin-top:4.5rem;
+}
+
+.text_container{
+     top:6rem;
+    
+}}
+
+@media( max-width: 603px){
+    .h1{
+       font-size: 3.5rem;
+    }
+    .h2{
+        font-size: 2.2rem;
+    }
+
+}
+ 
+@media( max-width: 544px){
+    .h1{
+       font-size: 3rem;
+    }
+    .h2{
+        font-size: 1.75rem;
+    }
+
+}
+
+.link{
+
+    width: fit-content;
+    height: fit-content;
+    padding: 1rem; 
+    background-color:rgba(10, 5, 0, 0.927);
+    color: bisque ;
+    font-size: 1.5rem;  
+    margin-top:2rem ;
+    margin-bottom: 2rem; 
+    border-radius: 1rem ;
+    transition: all 0.5s ease;
+    
+}
+
+.link:hover{
+     background-color:rgb(10, 5, 0);
 }
 
 
 
 
+
+.homeProductsSection{
+    position:absolute;
+    width: 100%;
+    height:35rem; 
+    
+
+}
+
+@media (max-width: 900px){
+
+.homeProductsSection{
+    margin-top: 2rem;
+}
+
+}
+
+.homeProductsSection *{
+   
+    font-weight: 400 ; 
+    margin-top : 0.5rem ; 
+   
+   
+}
+
+.h3{
+    color: bisque;
+    font-size: 1.5rem;
+     margin-left: 5rem; 
+   
+}
+
+.homeSectionGeneralContainer{
+    display:flex; 
+    align-items: center; 
+    justify-content:center;
+}
+
+.homeSectionProductsContainer{
+
+    display: flex;
+    flex-direction: row;   
+    justify-content: center;
+    align-items: center;  
+    width: 80%;
+    gap:2rem ;
+    
+
+
+}
+.homeProductsContainer{
+    
+   border-radius: 0.5rem; 
+   background-color: rgb(216, 173, 120) ; 
+  
+   width:fit-content;
+   height: 20rem ;
+   display:flex;
+   align-items:center;
+   justify-content: center; 
+   flex-direction: column;
+   transition: all 0.1s ease-in-out;
+   
+   
+
+
+}
+
+.homeProductsContainer:hover{
+    background-color: rgb(253, 202, 141);
+}
+
+
+
+.containerTexts{
+      text-align: center;
+      margin-bottom:1rem;
+}
+
+.homeProductsImg{
+   width:10rem ;
+   height:10rem ;
+   border-radius:50%;
+   margin:1rem;
+
+
+}
+
+
+
+.h4{
+   font-size: 1.5rem; 
+}
+
+.hSubtitle{
+  font-size: 1.2rem;
+}

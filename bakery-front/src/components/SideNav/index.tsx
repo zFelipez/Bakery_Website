@@ -50,7 +50,7 @@ export function SideNav({open,setOpen,...props}: SideNavProps){
     <nav {...props}  ref= {navRef} className={` ${styles.sideNav}  ${open? styles.sideNavTrue : ''} sideNavFunc `}   >
         <div className={styles.sideNavIcon}> <SideNavIcon />  </div>
         
-         <h1> <BakeryIcon></BakeryIcon></h1>
+         <div className= {styles.logo}> <BakeryIcon></BakeryIcon></div>
           <ul className={styles.ul}>
 
          <SideNavMenu linkAddress='#'> Inicio</SideNavMenu>

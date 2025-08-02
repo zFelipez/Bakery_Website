@@ -34,9 +34,10 @@
 }
  
 
-h1{
+.logo{
     margin-top:0rem;
-    text-align:center;
+    display:flex;
+    justify-content:center; 
     margin-bottom:1rem;
      
  
