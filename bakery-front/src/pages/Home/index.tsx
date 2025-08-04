@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Default } from "../../templates/Default";
 import styles from './styles.module.css';
+import { Clock, ReceiptTextIcon, Wheat } from "lucide-react";
 
 
 
@@ -12,8 +13,9 @@ export function Home (){
     <>
     <Default> 
 
+    <div className= {styles.homeContainer}>
 
-      <main>
+     <main>
        <div className= {styles.container}>
        <div className={styles.img}>   </div>
 
@@ -29,9 +31,9 @@ export function Home (){
       </main>
 
 
-     <section className={styles.homeProductsSection}>
+     <section className={`${styles.homeProductsSection} ${styles.homeSections} `}>
    
-         <h3 className= {styles.h3}> Nossos produtos</h3>  
+         <h3 className= {`${styles.h3} ${styles.hs} `}> Nossos produtos</h3>  
 
       <div className={styles.homeSectionGeneralContainer}>
 
@@ -61,11 +63,50 @@ export function Home (){
          </div>
          </div>
 
-     </section>
+     </section >
+        
+     <section className={`${styles.homeSections} ${styles.homeBenefitsSection} `}>
+           <h3 className={styles.hs}> Beneficios </h3>
+           
+           <div className= {styles.homeBenefitsContainer}>
 
-     <section>
-   
+           <div className={styles.homeBenefitsItemsGeneralContainer}>
+                <div className={styles.homeBenefitsItemsContainer }>
+                 <Wheat/> 
+               <p> Ingredientes Naturais</p>
+
+               </div>
+              
+           </div>
+
+           <div className={styles.homeBenefitsItemsGeneralContainer}>
+               
+               <div className={styles.homeBenefitsItemsContainer }>
+
+                 <Clock/>
+
+               <p> Fermentação Lenta  </p>
+               </div>
+              
+           </div>
+
+           <div className={styles.homeBenefitsItemsGeneralContainer}>
+               
+                <div className={styles.homeBenefitsItemsContainer }>
+
+                  <ReceiptTextIcon/>
+
+               <p> Receitas Tradicionais </p>
+               </div>
+              
+           </div>
+
+           </div>
+
       </section>
+
+    </div>
+      
     </Default>
     
     </>

@@ -92,13 +92,128 @@
 
 
 
-.homeProductsSection{
-    position:absolute;
+.homeSections{
+ 
     width: 100%;
-    height:35rem; 
-    
+    height:28rem; 
 
 }
+
+
+
+.homeSections *{
+   
+    font-weight: 400 ; 
+    margin-top : 0.5rem ; 
+   
+   
+}
+
+.hs{
+    color: bisque;
+    font-size: 1.5rem;
+    margin-left: 5rem; 
+   
+}
+
+.homeSectionGeneralContainer{
+    display:flex; 
+    align-items: center; 
+    justify-content:center;
+}
+
+.homeSectionProductsContainer{
+
+    display: flex;
+    flex-direction: row;   
+    justify-content: center;
+    align-items: center;  
+    width: 80%;
+    gap:2rem ;
+    
+
+
+}
+.homeProductsContainer{
+    
+   border-radius: 0.5rem; 
+   background-color: rgb(216, 173, 120) ; 
+   width:fit-content;
+   height: 20rem ;
+   display:flex;
+   align-items:center;
+   justify-content: center; 
+   flex-direction: column;
+   transition: all 0.1s ease-in-out;
+   
+}
+
+.homeProductsContainer:hover{
+    background-color: rgb(253, 202, 141);
+}
+
+
+
+.containerTexts{
+      text-align: center;
+      margin-bottom:1rem;
+}
+
+.homeProductsImg{
+   width:10rem ;
+   height:10rem ;
+   border-radius:50%;
+   margin:1rem;
+
+}
+
+.h4{
+   font-size: 1.5rem; 
+}
+
+.hSubtitle{
+  font-size: 1.2rem;
+}
+
+.homeContainer{
+    display:flex;
+    flex-direction: column;
+    gap:0.5rem; 
+}
+
+
+.homeBenefitsContainer{
+    width: 100%; 
+    display: flex; 
+    gap:0.5rem; 
+    justify-content: center;
+    align-items:center; 
+
+}
+.homeBenefitsItemsGeneralContainer{
+    width: 15rem;  
+    text-align:center; 
+}
+
+.homeBenefitsItemsContainer svg{
+    width: 4rem;
+    height:4rem; 
+    color:bisque ; 
+}
+
+.homeBenefitsItemsContainer p {
+    color:bisque; 
+    font-size:1.5rem; 
+}
+
+.homeBenefitsItemsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:2rem; 
+}
+
 
 @media (max-width: 900px){
 
@@ -176,87 +291,3 @@
      top:13rem;
       
 }}
-
-.homeProductsSection *{
-   
-    font-weight: 400 ; 
-    margin-top : 0.5rem ; 
-   
-   
-}
-
-.h3{
-    color: bisque;
-    font-size: 1.5rem;
-     margin-left: 5rem; 
-   
-}
-
-.homeSectionGeneralContainer{
-    display:flex; 
-    align-items: center; 
-    justify-content:center;
-}
-
-.homeSectionProductsContainer{
-
-    display: flex;
-    flex-direction: row;   
-    justify-content: center;
-    align-items: center;  
-    width: 80%;
-    gap:2rem ;
-    
-
-
-}
-.homeProductsContainer{
-    
-   border-radius: 0.5rem; 
-   background-color: rgb(216, 173, 120) ; 
-  
-   width:fit-content;
-   height: 20rem ;
-   display:flex;
-   align-items:center;
-   justify-content: center; 
-   flex-direction: column;
-   transition: all 0.1s ease-in-out;
-   
-   
-
-
-}
-
-.homeProductsContainer:hover{
-    background-color: rgb(253, 202, 141);
-}
-
-
-
-.containerTexts{
-      text-align: center;
-      margin-bottom:1rem;
-}
-
-.homeProductsImg{
-   width:10rem ;
-   height:10rem ;
-   border-radius:50%;
-   margin:1rem;
-
-
-}
-
-
-
-.h4{
-   font-size: 1.5rem; 
-}
-
-.hSubtitle{
-  font-size: 1.2rem;
-}
-
-
- 
