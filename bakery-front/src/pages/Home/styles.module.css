@@ -33,7 +33,7 @@
       font-weight: bold ; 
 }
 .topTitles{
-     color :rgba(10, 5, 0, 0.927); 
+     color :bisque; 
      width: fit-content;
      display:flex;
      justify-content: center;
@@ -41,17 +41,17 @@
      border-radius: 0.5rem ;
      padding: 0 0.5rem;
        text-shadow: 
-    -0.5px -0.5px 0 bisque,  
-     0.5px -0.5px 0 bisque,
-    -0.5px  0.5px 0 bisque,
-     0.5px 0.5px 0 bisque;
+    -1px -1px 0 rgba(10, 5, 0, 0.927),  
+     1px -1px 0 rgba(10, 5, 0, 0.927),
+    -1px  1px 0 rgba(10, 5, 0, 0.927),
+     1px 1px 0 rgba(10, 5, 0, 0.927);
 
 }
 
 .h1{
      text-align:left !important;
      font-size: 4rem; 
-    font-weight:bold
+     font-weight:bold
 
 }
 
@@ -61,70 +61,14 @@
     font-size: 2rem; 
     
 }
-@media( min-width:915px){
-
-.text_container{
-     top:13rem;
-      
-}
 
 
 
-.h1{
-     text-align:left !important;
-     
-      
 
-}
+ 
+ 
 
  
-}
-
-@media(min-width: 476px ) and (max-width: 914px){
-
-   .img{
-      margin-top:4.5rem;
-}
-
-    .text_container{
-     top:8rem;
-}
-}
-
-
-
-@media( min-width: 300px) and (max-width: 475px){
-
-
-.img{
-      margin-top:4.5rem;
-}
-
-.text_container{
-     top:6rem;
-    
-}}
-
-@media( max-width: 603px){
-    .h1{
-       font-size: 3.5rem;
-    }
-    .h2{
-        font-size: 2.2rem;
-    }
-
-}
- 
-@media( max-width: 544px){
-    .h1{
-       font-size: 3rem;
-    }
-    .h2{
-        font-size: 1.75rem;
-    }
-
-}
-
 .link{
 
     width: fit-content;
@@ -163,9 +107,55 @@
 }
 
 
+@media(max-width: 700px){
+
+    .h1,.h2, .h3, .text-container,.link{
+        margin-left: 2rem; 
+    }
+   
+}
+
+@media(min-width: 476px ) and (max-width: 914px){
+
+   .img{
+      margin-top:4.5rem;
+}
+
+    .text_container{
+     top:8rem;
+}
+}
+
+
+
+@media( min-width: 300px) and (max-width: 500px){
+
+
+.img{
+      margin-top:4.5rem;
+}
+
+ .h1{
+    font-size: 3rem;
+ }
+ .h2{
+    font-size: 1.5rem;
+ }
+
+.text_container{
+     top:12rem;
+    
+}}
 
 
 }
+
+@media( min-width:915px){
+
+.text_container{
+     top:13rem;
+      
+}}
 
 .homeProductsSection *{
    
@@ -248,9 +238,5 @@
   font-size: 1.2rem;
 }
 
-@media(max-width: 700px){
 
-    .h1,.h2, .h3, .text-container,.link{
-        margin-left: 2rem; 
-    }
-}
+ 
