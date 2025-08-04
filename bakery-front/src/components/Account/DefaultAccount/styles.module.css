@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     
-    margin-top:4.8rem ;
+    margin-top:3rem ;
      
 }
 
@@ -16,9 +16,6 @@
     background-color: bisque; 
     width: 23rem;
     border-radius: 1rem;
-
-    
-
 }
 .formLogin{
     
@@ -31,6 +28,13 @@
     
 }
 
+@media (max-width:800px){
+    .container{
+        margin-top:1rem; 
+    }
+}
+
+
 .formContainer{
     display: flex;
     flex-direction: column;
@@ -41,7 +45,7 @@
 }
 
 .logo{
-    background: url('/public/assets/bakery_img_nobg.png');
+    background: url('/assets/bakery_img_nobg.png');
     width: 100px;
     height:100px;
     background-size: contain; 
@@ -95,7 +99,7 @@
  color:bisque ; 
  border:none; 
  border-radius: 1rem; 
- font-family: 'EB-gramound';
+ font-family: 'EB Garamound';
  font-size: 1.2rem;
  cursor: pointer ;
   
