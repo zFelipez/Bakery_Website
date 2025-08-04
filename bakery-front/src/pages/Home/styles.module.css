@@ -111,7 +111,7 @@
 
 .hs{
     color: bisque;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-left: 5rem; 
    
 }
@@ -195,6 +195,23 @@
     text-align:center; 
 }
 
+.homeBenefitsItemsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:2rem; 
+    background-color:rgba(53, 39, 39, 0.226);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem; 
+    padding:1rem; 
+    transition: all 0.1s ease;
+}
+
+.homeBenefitsItemsContainer:hover{
+     background-color:rgba(64, 47, 47, 0.226);
+}
+
 .homeBenefitsItemsContainer svg{
     width: 4rem;
     height:4rem; 
@@ -206,13 +223,7 @@
     font-size:1.5rem; 
 }
 
-.homeBenefitsItemsContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap:2rem; 
-}
+
 
 
 @media (max-width: 900px){
