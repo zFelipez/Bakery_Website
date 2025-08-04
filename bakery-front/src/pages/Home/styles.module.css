@@ -56,8 +56,8 @@
 }
 
 .h2{
-
-   font-family: 'Raleway', sans-serif;
+    
+    font-weight:400; 
     font-size: 2rem; 
     
 }
@@ -128,7 +128,7 @@
 
 
 
-@media( min-width: 300px) and (max-width: 500px){
+@media( min-width: 436px) and (max-width: 500px){
 
 
 .img{
@@ -148,6 +148,26 @@
 }}
 
 
+}
+
+@media (max-width: 435px){
+    
+    .img{
+      margin-top:4.5rem;
+}
+
+ .h1{
+    font-size: 3rem;
+ }
+ .h2{
+    font-size: 1.5rem;
+ }
+
+    
+    .text_container{
+     top:10rem;
+    
+}
 }
 
 @media( min-width:915px){
