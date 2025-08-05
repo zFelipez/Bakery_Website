@@ -1,0 +1,55 @@
+
+.contactGeneralContainer{
+     display:flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+
+.form{
+    margin-top: 2rem;
+    width:40%;
+    border-radius:1rem;
+    background-color:bisque; 
+    backdrop-filter:  blur(10px);
+    padding:2rem; 
+
+}
+
+.formContainer{
+    display:flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap : 1rem; 
+
+
+
+}
+
+
+.contactGeneralContainer input, .btn{
+    width:95% !important;
+}
+
+
+.p{
+    margin-bottom:2rem; 
+    font-size:1.5rem;
+    width: 95%;
+}
+
+.btn{
+ width: 80%;
+ height: 3rem;
+ background-color:  rgb(26, 23, 10);
+ color:bisque ; 
+ border:none; 
+ border-radius: 1rem; 
+ font-family: 'EB Garamound';
+ font-size: 1.2rem;
+ cursor: pointer ;
+  
+ }
