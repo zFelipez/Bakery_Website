@@ -145,7 +145,7 @@
 @media (max-width : 665px){
 
 
-    .chatSection{
-        width:100%;
+    .secContainer {
+        width:95%;
     }
 }
