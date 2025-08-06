@@ -63,13 +63,6 @@
     
 }
 
-
-
-
- 
- 
-
- 
 .link{
 
     width: fit-content;
@@ -81,6 +74,7 @@
     margin-top:2rem ;
     margin-bottom: 2rem; 
     border-radius: 1rem ;
+    border: 1px solid bisque;
     transition: all 2s ease-in-out;
     
 }
@@ -131,6 +125,7 @@
     align-items: center;  
     width: 80%;
     gap:2rem ;
+    overflow-x : auto;
     
 
 
@@ -192,7 +187,7 @@
 
 }
 .homeBenefitsItemsGeneralContainer{
-    width: 15rem;  
+    width: 8rem;  
     text-align:center; 
 }
 

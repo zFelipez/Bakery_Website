@@ -9,6 +9,7 @@ body {
   width: 100vw;
   min-height: 100vh;
   font-family: 'EB Garamond', 'EB Garamond Local', serif;
+  scroll-behavior: smooth;
 }
 
 a, img, button {

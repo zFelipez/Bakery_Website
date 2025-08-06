@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import styles from './styles.module.css'
 
 type SideNavMenuProps = {
@@ -12,7 +13,7 @@ export function SideNavMenu({children,linkAddress}: SideNavMenuProps){
 
         <>
          
-        <li className= {styles.li}> <a href={linkAddress} className={styles.a}> {children}  </a> </li>
+        <li className= {styles.li}> <Link to={linkAddress} className={styles.link}> {children}  </Link> </li>
             
         </>
     )

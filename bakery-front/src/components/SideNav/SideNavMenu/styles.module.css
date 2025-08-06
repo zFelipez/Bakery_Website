@@ -15,7 +15,7 @@
   background-color: rgb(26, 23, 10);
 }
 
-.a{
+.link{
     display:flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +26,7 @@
     cursor: pointer;
 }
 
-.a:hover{
+.link:hover{
   color:bisque; 
 }
 

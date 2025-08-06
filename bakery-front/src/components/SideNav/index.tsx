@@ -53,22 +53,14 @@ export function SideNav({open,setOpen,...props}: SideNavProps){
          <div className= {styles.logo}> <BakeryIcon></BakeryIcon></div>
           <ul className={styles.ul}>
 
-         <SideNavMenu linkAddress='#'> Inicio</SideNavMenu>
-         <SideNavMenu linkAddress='#'> Sobre</SideNavMenu>
-         <SideNavMenu linkAddress='#' > Produtos</SideNavMenu>
-         <SideNavMenu linkAddress='#'> Contato</SideNavMenu>
-         <SideNavMenu linkAddress='#'> Conta</SideNavMenu>
-         <SideNavMenu linkAddress='#'> Compras</SideNavMenu>
-         <SideNavMenu linkAddress='#'> Assistente </SideNavMenu>
-         <SideNavMenu linkAddress='#'> Assistente </SideNavMenu>
-         <SideNavMenu linkAddress='#'> Assistente </SideNavMenu>
-         <SideNavMenu linkAddress='#'> Assistente </SideNavMenu>
-         <SideNavMenu linkAddress='#'> Assistente </SideNavMenu>
-         
-
-          
-          
-            
+         <SideNavMenu linkAddress='/'> Inicio</SideNavMenu>
+         <SideNavMenu linkAddress='/About'> Sobre</SideNavMenu>
+         <SideNavMenu linkAddress='/Products' > Produtos</SideNavMenu>
+         <SideNavMenu linkAddress='/Contact'> Contato</SideNavMenu>
+         <SideNavMenu linkAddress='/account/login'> Conta</SideNavMenu>
+         <SideNavMenu linkAddress='/shopping/cart'> Compras</SideNavMenu>
+         <SideNavMenu linkAddress='/AiChat'> Assistente </SideNavMenu>
+    
           </ul>
           <div className={styles.force_scroll}> </div>
      
